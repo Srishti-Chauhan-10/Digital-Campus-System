@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../../components/Layout.jsx';
 import { useAuth, useToast, Stat, Empty } from '../../components/ui.jsx';
 import { api, fmtDate } from '../../api.js';
-import { SCHOOL } from '../../../../data/schoolMeta.js';
+import { SCHOOL } from '../../data/schoolMeta.js';
 
 const QUICK = [
   { to: '/s/doubt', icon: '💡', title: 'શંકા પોર્ટલ', sub: 'પૂછો — Axon તરત જવાબ આપશે', tone: 'from-linden to-kiwi' },

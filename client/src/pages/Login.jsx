@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth, useToast } from '../components/ui.jsx';
 import { apiLogin } from '../api.js';
-import { SCHOOL } from '../../../data/schoolMeta.js';
+import { SCHOOL } from '../data/schoolMeta.js';
 
 
 export default function Login() {

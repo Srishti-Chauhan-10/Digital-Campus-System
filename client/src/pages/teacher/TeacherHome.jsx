@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../../components/Layout.jsx';
 import { useAuth, useToast, Stat } from '../../components/ui.jsx';
 import { api, fmtDate } from '../../api.js';
-import { SCHOOL } from '../../../../data/schoolMeta.js';
+import { SCHOOL } from '../../data/schoolMeta.js';
 
 const CARDS = [
   { to: '/t/doubts', icon: '💡', title: 'વિદ્યાર્થીની શંકા', sub: 'પ્રશ્ન જુઓ અને જવાબ આપો' },

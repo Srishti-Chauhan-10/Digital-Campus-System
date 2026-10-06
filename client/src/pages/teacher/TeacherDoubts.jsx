@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout.jsx';
 import { useToast, Empty, Tabs, Field } from '../../components/ui.jsx';
 import { api, fmtDate, fmtTime } from '../../api.js';
-import { STATUS_STYLE } from '../../../../data/schoolMeta.js';
+import { STATUS_STYLE } from '../../data/schoolMeta.js';
 
 export default function TeacherDoubts() {
   const { push } = useToast();
