@@ -1,0 +1,64 @@
+=========================================================
+  HOW TO UPDATE THE APP LATER (without losing data)
+  એપ પછી કેવી રીતે અપડેટ કરવું (ડેટા ગુમાવાય નહીં)
+=========================================================
+
+THE GOLDEN RULE
+---------------
+  YOUR DATA IS NOT IN THE APP FOLDER.
+
+  Data lives here (NEVER delete this folder):
+      ~/SchoolApp-Data          (Mac / Linux)
+      %LOCALAPPDATA%\SchoolApp-Data   (Windows)
+
+  It contains:
+      school.db        ← all students, marks, results, complaints
+      backups/         ← automatic backup copies
+      વાંચો.txt
+
+  The app folder (SchoolApp-v2.0) is just the PROGRAM.
+  You can delete it and it will not harm your data.
+
+
+HOW TO GET A NEW VERSION
+------------------------
+  1. Download the new ZIP from your teacher
+  2. Delete the OLD app folder:
+         rm -rf ~/Downloads/SchoolApp-v2.0
+  3. Unzip the new one:
+         cd ~/Downloads && unzip -oq ./SCHOOL-APP-NEW-v2.zip
+  4. Start it:
+         cd ~/Downloads/SchoolApp-v2.0 && npm start
+  5. Open http://localhost:3000 in Chrome and press Cmd+Shift+R
+
+  Your students, marks and results will all still be there.
+  (I tested this by deleting the whole app folder — data survived.)
+
+
+BEFORE ANY BIG CHANGE — TAKE A BACKUP
+-------------------------------------
+  Inside the app (teacher login):
+      💾 ડેટા બેકઅપ  →  "હમણાં બેકઅપ લો"
+                        "કમ્પ્યુટરમાં ડાઉનલોડ કરો"
+
+  A backup is also taken automatically every time the server starts.
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+  Copy this folder somewhere safe to restore:
+      ~/SchoolApp-Data/school.db
+
+  Then start the app again and your data is back.
+
+
+WANTING TO CHANGE / ADD FEATURES
+--------------------------------
+  Tell your teacher (who builds the app) what you want, for example:
+      "Add a new subject"
+      "Change the pass mark"
+      "Show attendance"
+      "Remove the internal exam"
+
+  The program gets updated. Your data stays safe.
+=========================================================

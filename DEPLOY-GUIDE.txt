@@ -1,0 +1,98 @@
+=========================================================
+  RUN IT ON ANY COMPUTER  /  DEPLOYMENT GUIDE
+  કોઈપણ કમ્પ્યુટર પર ચલાવવા માટે
+=========================================================
+
+PART 1 — RUN ON A SCHOOL COMPUTER (FREE)
+========================================
+You need Node.js ONCE (5 minute job):
+
+  1. Go to  nodejs.org
+  2. Click the big green "LTS" button
+  3. Install it
+  4. Double-click the right launcher:
+
+       Windows  ->  START-HERE-Windows.bat
+       Mac      ->  START-HERE-Mac.command
+       Linux    ->  START-HERE-Linux.sh
+
+  5. It installs automatically the first time (1-2 min)
+  6. The website opens in the browser
+
+  DONE. From then on, just double-click the launcher every time.
+
+  Open at:  http://localhost:3000
+
+
+PART 2 — OPEN ON PHONE / TABLET (FREE, SAME WI-FI)
+==================================================
+The launcher prints a link like:
+
+      http://192.168.1.5:3000
+
+Open THAT link on any phone or tablet connected to the SAME WiFi.
+No internet needed. No app to install.
+
+If the link does not show, find your computer's IP:
+      Mac / Windows :  ipconfig   (look for "IPv4 Address")
+      Linux         :  hostname -I
+
+
+PART 3 — PUT IT ON THE INTERNET (ONE LINK, ANYWHERE)
+====================================================
+This gives you a link like  https://school-app.onrender.com
+that works on any computer, any phone, anywhere.
+
+YOU WILL NEED:
+   - A free account on a hosting site (Render, Railway or Fly.io)
+   - A debit/credit card (free plans ask for one, you are not charged)
+   - About 20 minutes on your first-time setup
+
+I CAN'T CREATE THAT ACCOUNT FOR YOU (it needs your email + card),
+but the project is already 100% ready. I have included the config:
+
+   render.yaml      <- for Render.com   (easiest)
+   railway.json     <- for Railway.app  (gives free PostgreSQL too)
+   Procfile         <- for Heroku
+
+Easiest path (Render.com):
+   1. Push this folder to a free GitHub repository
+   2. Go to render.com -> "New" -> "Web Service" -> connect GitHub
+   3. Render reads render.yaml automatically
+   4. Wait ~5 minutes, you get your link
+
+  IMPORTANT: Free hosting goes to sleep when nobody uses it
+  (wakes up in ~30 seconds) and restarts daily. Your DATA is on a
+  permanent disk, so nothing is lost.
+
+  DATA ON CLOUD: set DCS_DATA_DIR to a persistent disk path.
+  Ask me and I will give you the exact settings.
+
+
+WHERE YOUR DATA LIVES (IMPORTANT)
+=================================
+  Your data is NOT in the app folder.
+
+  On this computer:   ~/SchoolApp-Data
+  On Windows:         %LOCALAPPDATA%\SchoolApp-Data
+
+  It contains school.db (all students, marks, results) + backups/.
+
+  You can delete and replace the app folder any time.
+  Your data always stays safe in its own folder.
+
+  BACKUP:  Teacher login ->  "ડેટા બેકઅપ"  menu
+           ->  "હમણાં બેકઅપ લો"  or  "કમ્પ્યુટરમાં ડાઉનલોડ કરો"
+  A backup is also made automatically every time the app starts.
+
+
+HOW TO UPDATE LATER
+====================
+  1. Download the new ZIP
+  2. Delete the old app folder
+  3. Unzip the new one
+  4. Run the launcher
+  5. Open the website and press Ctrl+Shift+R (Win) or Cmd+Shift+R (Mac)
+
+  Students, marks and results stay exactly as they were.
+=========================================================
