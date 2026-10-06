@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from './ui.jsx';
-import { SCHOOL } from '../data/schoolMeta.js';
+import { SCHOOL } from '../../../data/schoolMeta.js';
 
 const STUDENT_NAV = [
   { to: '/s', label: 'હોમ', icon: '🏠', end: true },

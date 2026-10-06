@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout.jsx';
 import { useToast, Empty, Tabs, Field } from '../../components/ui.jsx';
 import { api, fmtDate, fmtTime } from '../../api.js';
-import { COMPLAINT_CATEGORIES, STATUS_STYLE } from '../../data/schoolMeta.js';
+import { COMPLAINT_CATEGORIES, STATUS_STYLE } from '../../../../data/schoolMeta.js';
 
 const NEXT_STATUS = { 'નવી': ['ચર્ચામાં', 'ઉકેલાઈ', 'નકારાયેલ'], 'ચર્ચામાં': ['ઉકેલાઈ', 'નકારાયેલ'], 'ઉકેલાઈ': [], 'નકારાયેલ': [] };
 

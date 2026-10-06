@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Layout from '../../components/Layout.jsx';
 import { useToast, Field, Empty, Tabs } from '../../components/ui.jsx';
 import { api } from '../../api.js';
-import { examsFor } from '../../data/schoolMeta.js';
+import { examsFor } from '../../../../data/schoolMeta.js';
 
 export default function TeacherMarks() {
   const { push } = useToast();

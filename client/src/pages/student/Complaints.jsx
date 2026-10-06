@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout.jsx';
 import { useToast, Field, Empty, Tabs } from '../../components/ui.jsx';
 import { api, fmtDate } from '../../api.js';
-import { COMPLAINT_CATEGORIES, STATUS_STYLE } from '../../data/schoolMeta.js';
+import { COMPLAINT_CATEGORIES, STATUS_STYLE } from '../../../../data/schoolMeta.js';
 
 const HOSTEL_ISSUES = ['ખાવાનું જંગ્લી છે', 'પાણી પૂરતું નથી', 'શૌચાલયની સમસ્યા', 'બેડનો બગડ્યો છે', 'વિદ્યુતિ કે પંખા બંધ', 'કોઈ વિદ્યાર્થી પર હુંશી', 'અન્ય'];
 const CAMPUS_ISSUES = ['વર્ગખંડમાં ગંભીર અવાજ', 'શૌચાલય સાફિકટી', 'રમતનું સાધન તૂટેલું', 'પાણીનો ટાંકી બગડેલ', 'લાઇબ્રેરીમાં નુકસાન', 'અન્ય'];
