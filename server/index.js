@@ -12,7 +12,7 @@ const BUILD_STAMP = new Date().toISOString().slice(0, 16).replace('T', ' ');
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 10000;
 
 // એક વાર જ ડેટાબેઝ તૈયાર કરો (ખાલી હોય તો સીડ કરો)
 const studentCount = db.prepare('SELECT COUNT(*) c FROM students').get().c;
